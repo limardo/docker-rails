@@ -14,5 +14,5 @@ docker-compose up
 ```
 
 ```
-docker exec rails_web rake db:create
+docker exec rails_web rails db:create
 ```
