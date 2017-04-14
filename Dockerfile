@@ -1,5 +1,5 @@
 FROM ruby:2.4.1
-RUN apt-get update -qq && apt-get install build-essential libpq-dev nodejs -y
+RUN apt-get update -qq && apt-get install build-essential libmysqlclient-dev nodejs -y
 RUN mkdir /app
 WORKDIR /app
 ADD Gemfile /app/Gemfile
