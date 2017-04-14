@@ -2,7 +2,7 @@
 
 
 ```
-docker-compose run web rails new . --force --skip-bundle
+docker-compose run web rails new . --force --database=postgresql --skip-bundle
 ```
 
 ```
