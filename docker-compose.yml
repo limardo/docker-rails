@@ -1,5 +1,7 @@
 version: '2'
 services:
+  db:
+    image: postgres
   web:
     container_name: rails_web
     build: .
@@ -8,3 +10,5 @@ services:
       - .:/app
     ports:
       - "3000:3000"
+    depends_on:
+      - db
