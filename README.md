@@ -1,4 +1,4 @@
-# docker-rails-seed
+# docker-rails
 
 
 ```
@@ -12,7 +12,13 @@ docker-compose build
 ```
 docker-compose up
 ```
-
 ```
-docker exec rails_web rails db:create
+default: &default
+  ...
+  username: postgres
+  password:
+  host: db
+```
+```
+docker-compose exec web rails db:create
 ```
