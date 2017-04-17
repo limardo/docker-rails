@@ -1,4 +1,4 @@
-# docker-rails-seed
+# docker-rails
 
 
 ```
@@ -14,5 +14,5 @@ docker-compose up
 ```
 
 ```
-docker exec rails_web rails db:create
+docker-compose exec web rails db:create
 ```
