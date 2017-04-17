@@ -1,4 +1,4 @@
-# docker-rails-seed
+# docker-rails
 
 
 ```
@@ -15,13 +15,12 @@ docker-compose up
 `config/database.yml`
 ```yaml
 default: &default
-  adapter: mysql2
-  encoding: utf8
-  pool: 5
+  ...
   username: root
   password: password
-  host: mysql
+  host: db
 ```
+
 ```
-docker exec rails_web rails db:create
+docker-compose exec web rails db:create
 ```
