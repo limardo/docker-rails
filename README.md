@@ -12,7 +12,7 @@ docker-compose build
 ```
 docker-compose up
 ```
-```
+```yaml
 default: &default
   ...
   username: postgres
