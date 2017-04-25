@@ -16,7 +16,7 @@ docker-compose up
 default: &default
   ...
   username: postgres
-  password:
+  password: password
   host: db
 ```
 ```
